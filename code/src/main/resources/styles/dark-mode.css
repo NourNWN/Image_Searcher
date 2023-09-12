@@ -1,0 +1,77 @@
+.root {
+    -fx-base: #333333;
+    -fx-text-fill: #ffffff;
+}
+
+/* خلفية عنصر التحكم الداخلي */
+.text-input,
+.button,
+.list-view,
+.table-view,
+.tree-view {
+    -fx-control-inner-background: #444444;
+    -fx-control-inner-background-alt: #555555;
+}
+
+/* لون النص في عنصر التحكم الداخلي */
+.text-input,
+.combo-box,
+.list-view,
+.table-view,
+.tree-view {
+    -fx-text-fill: #ffffff;
+}
+
+/* لون النص في العناصر القابلة للتحديد */
+.list-view .cell:selected,
+.table-view .cell:selected,
+.tree-view .tree-cell:selected {
+    -fx-text-fill: #ffffff;
+}
+
+/* تحديد العناصر */
+.list-view .cell:filled:selected,
+.table-view .cell:filled:selected,
+.tree-view .tree-cell:filled:selected {
+    -fx-background-color: #555555;
+}
+
+/* لون النص في العناصر المختارة */
+.list-view .cell:filled:selected .text,
+.table-view .cell:filled:selected .text,
+.tree-view .tree-cell:filled:selected .text {
+    -fx-fill: #ffffff;
+}
+
+/* dark-mode.css */
+
+/* تعيين الألوان لواجهة الظلام */
+.root {
+    -fx-background-color: #323232;
+    -fx-text-fill: white;
+}
+
+/* تأثير التلاشي عند تحويل المؤشر فوق العناصر */
+.button:hover,
+.label:hover,
+.color-picker:hover {
+    -fx-opacity: 0.7;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+/* تأثير التحول عند النقر على العناصر */
+.button:pressed,
+.label:pressed,
+.color-picker:pressed {
+    -fx-opacity: 0.9;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);
+}
+
+/* تأثير التحول عند تحديد العنصر */
+.button:focused,
+.label:focused,
+.color-picker:focused {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 5, 0, 0, 0);
+}
+
